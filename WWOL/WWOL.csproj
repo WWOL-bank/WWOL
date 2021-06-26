@@ -64,6 +64,12 @@
     <Compile Include="PutNum.Designer.cs">
       <DependentUpon>PutNum.cs</DependentUpon>
     </Compile>
+    <Compile Include="PutOutMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PutOutMoney.Designer.cs">
+      <DependentUpon>PutOutMoney.cs</DependentUpon>
+    </Compile>
     <Compile Include="PutPW.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </Compile>
     <EmbeddedResource Include="PutNum.resx">
       <DependentUpon>PutNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PutOutMoney.resx">
+      <DependentUpon>PutOutMoney.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PutPW.resx">
       <DependentUpon>PutPW.cs</DependentUpon>

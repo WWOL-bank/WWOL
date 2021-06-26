@@ -54,9 +54,9 @@ namespace WWOL
             this.label1.Font = new System.Drawing.Font("한컴 고딕", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label1.Location = new System.Drawing.Point(276, 150);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(524, 65);
+            this.label1.Size = new System.Drawing.Size(511, 65);
             this.label1.TabIndex = 0;
-            this.label1.Text = "계좌 번호를 입력하세요";
+            this.label1.Text = "계좌번호를 입력하세요";
             // 
             // textBox3
             // 

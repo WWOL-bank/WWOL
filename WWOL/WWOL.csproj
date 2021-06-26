@@ -64,6 +64,12 @@
     <Compile Include="PutNum.Designer.cs">
       <DependentUpon>PutNum.cs</DependentUpon>
     </Compile>
+    <Compile Include="PutPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PutPW.Designer.cs">
+      <DependentUpon>PutPW.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignFinish.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </Compile>
     <EmbeddedResource Include="PutNum.resx">
       <DependentUpon>PutNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PutPW.resx">
+      <DependentUpon>PutPW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignFinish.resx">
       <DependentUpon>SignFinish.cs</DependentUpon>

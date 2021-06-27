@@ -35,7 +35,7 @@ namespace WWOL
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.sign = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -91,18 +91,19 @@ namespace WWOL
             this.textBox2.TabIndex = 4;
             this.textBox2.UseSystemPasswordChar = true;
             // 
-            // button1
+            // sign
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("한컴 고딕", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.button1.Location = new System.Drawing.Point(789, 450);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 85);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = false;
+            this.sign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
+            this.sign.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sign.BackgroundImage")));
+            this.sign.FlatAppearance.BorderSize = 0;
+            this.sign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sign.Font = new System.Drawing.Font("한컴 고딕", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.sign.Location = new System.Drawing.Point(789, 450);
+            this.sign.Name = "sign";
+            this.sign.Size = new System.Drawing.Size(160, 85);
+            this.sign.TabIndex = 5;
+            this.sign.UseVisualStyleBackColor = false;
+            this.sign.Click += new System.EventHandler(this.sign_Click);
             // 
             // Signin
             // 
@@ -110,7 +111,7 @@ namespace WWOL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.sign);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -118,7 +119,6 @@ namespace WWOL
             this.Controls.Add(this.label1);
             this.Name = "Signin";
             this.Text = "Signin";
-            this.Load += new System.EventHandler(this.Signin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +131,6 @@ namespace WWOL
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button sign;
     }
 }

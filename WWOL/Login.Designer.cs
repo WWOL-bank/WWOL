@@ -37,7 +37,7 @@ namespace WWOL
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.inbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -113,18 +113,19 @@ namespace WWOL
             this.textBox3.Size = new System.Drawing.Size(366, 59);
             this.textBox3.TabIndex = 8;
             // 
-            // button1
+            // inbtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("한컴 고딕", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.button1.Location = new System.Drawing.Point(789, 450);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 80);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
+            this.inbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
+            this.inbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("inbtn.BackgroundImage")));
+            this.inbtn.FlatAppearance.BorderSize = 0;
+            this.inbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inbtn.Font = new System.Drawing.Font("한컴 고딕", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.inbtn.Location = new System.Drawing.Point(789, 450);
+            this.inbtn.Name = "inbtn";
+            this.inbtn.Size = new System.Drawing.Size(150, 80);
+            this.inbtn.TabIndex = 9;
+            this.inbtn.UseVisualStyleBackColor = false;
+            this.inbtn.Click += new System.EventHandler(this.inbtn_Click);
             // 
             // Login
             // 
@@ -132,7 +133,7 @@ namespace WWOL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.inbtn);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox2);
@@ -142,7 +143,6 @@ namespace WWOL
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +157,6 @@ namespace WWOL
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button inbtn;
     }
 }

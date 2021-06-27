@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BankNumCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankNumCheck.Designer.cs">
+      <DependentUpon>BankNumCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InCheck.Designer.cs">
+      <DependentUpon>InCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InFinish.Designer.cs">
+      <DependentUpon>InFinish.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +75,24 @@
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutCheck.Designer.cs">
+      <DependentUpon>OutCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutFinish.Designer.cs">
+      <DependentUpon>OutFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PutInMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PutInMoney.Designer.cs">
+      <DependentUpon>PutInMoney.cs</DependentUpon>
     </Compile>
     <Compile Include="PutNum.cs">
       <SubType>Form</SubType>
@@ -70,11 +106,29 @@
     <Compile Include="PutOutMoney.Designer.cs">
       <DependentUpon>PutOutMoney.cs</DependentUpon>
     </Compile>
+    <Compile Include="PutOutNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PutOutNum.Designer.cs">
+      <DependentUpon>PutOutNum.cs</DependentUpon>
+    </Compile>
     <Compile Include="PutPW.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PutPW.Designer.cs">
       <DependentUpon>PutPW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendCheck.Designer.cs">
+      <DependentUpon>SendCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendFinish.Designer.cs">
+      <DependentUpon>SendFinish.cs</DependentUpon>
     </Compile>
     <Compile Include="SignFinish.cs">
       <SubType>Form</SubType>
@@ -88,23 +142,34 @@
     <Compile Include="Signin.Designer.cs">
       <DependentUpon>Signin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Start.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>Start.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include=".Designer.resx">
-      <DependentUpon>.Designer.cs</DependentUpon>
+    <Compile Include="StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BankNumCheck.resx">
+      <DependentUpon>BankNumCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InCheck.resx">
+      <DependentUpon>InCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InFinish.resx">
+      <DependentUpon>InFinish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutCheck.resx">
+      <DependentUpon>OutCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutFinish.resx">
+      <DependentUpon>OutFinish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,20 +180,35 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PutInMoney.resx">
+      <DependentUpon>PutInMoney.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PutNum.resx">
       <DependentUpon>PutNum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PutOutMoney.resx">
       <DependentUpon>PutOutMoney.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PutOutNum.resx">
+      <DependentUpon>PutOutNum.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PutPW.resx">
       <DependentUpon>PutPW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendCheck.resx">
+      <DependentUpon>SendCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendFinish.resx">
+      <DependentUpon>SendFinish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignFinish.resx">
       <DependentUpon>SignFinish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signin.resx">
       <DependentUpon>Signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,20 +1,17 @@
 ﻿
 namespace WWOL
 {
-    partial class Form1
+    partial class StartPage
     {
-        private System.Windows.Forms.Button signinBtn;
-        private System.Windows.Forms.Button loginBtn;
-
         /// <summary>
-        /// 필수 디자이너 변수입니다.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 사용 중인 모든 리소스를 정리합니다.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,15 +21,15 @@ namespace WWOL
             base.Dispose(disposing);
         }
 
-        #region Windows Form 디자이너에서 생성한 코드
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// 디자이너 지원에 필요한 메서드입니다. 
-        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartPage));
             this.signinBtn = new System.Windows.Forms.Button();
             this.loginBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -47,9 +44,10 @@ namespace WWOL
             this.signinBtn.Location = new System.Drawing.Point(265, 120);
             this.signinBtn.Name = "signinBtn";
             this.signinBtn.Size = new System.Drawing.Size(295, 120);
-            this.signinBtn.TabIndex = 0;
+            this.signinBtn.TabIndex = 1;
             this.signinBtn.Text = "회원가입";
             this.signinBtn.UseVisualStyleBackColor = false;
+            this.signinBtn.Click += new System.EventHandler(this.signinBtn_Click);
             // 
             // loginBtn
             // 
@@ -61,11 +59,12 @@ namespace WWOL
             this.loginBtn.Location = new System.Drawing.Point(637, 324);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(221, 120);
-            this.loginBtn.TabIndex = 1;
+            this.loginBtn.TabIndex = 2;
             this.loginBtn.Text = "로그인";
             this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
-            // Form1
+            // StartPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -73,19 +72,15 @@ namespace WWOL
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.signinBtn);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "StartPage";
+            this.Text = "StartPage";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private void Form1_Load(object sender, System.EventArgs e)
-        {
-
-        }
+        private System.Windows.Forms.Button signinBtn;
+        private System.Windows.Forms.Button loginBtn;
     }
 }
-

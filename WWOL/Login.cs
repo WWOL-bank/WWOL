@@ -17,9 +17,13 @@ namespace WWOL
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void inbtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Main main = new Main();
+            main.Show();
+            Program.ac.MainForm = main;
+            this.Close();
         }
     }
 }

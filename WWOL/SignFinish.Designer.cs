@@ -31,6 +31,7 @@ namespace WWOL
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignFinish));
             this.label1 = new System.Windows.Forms.Label();
+            this.gomain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,12 +46,26 @@ namespace WWOL
             this.label1.TabIndex = 0;
             this.label1.Text = "가입완료";
             // 
+            // gomain
+            // 
+            this.gomain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
+            this.gomain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gomain.BackgroundImage")));
+            this.gomain.FlatAppearance.BorderSize = 0;
+            this.gomain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gomain.Location = new System.Drawing.Point(682, 448);
+            this.gomain.Name = "gomain";
+            this.gomain.Size = new System.Drawing.Size(234, 84);
+            this.gomain.TabIndex = 1;
+            this.gomain.UseVisualStyleBackColor = false;
+            this.gomain.Click += new System.EventHandler(this.gomain_Click);
+            // 
             // SignFinish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.gomain);
             this.Controls.Add(this.label1);
             this.Name = "SignFinish";
             this.Text = "SignFinish";
@@ -62,5 +77,6 @@ namespace WWOL
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button gomain;
     }
 }

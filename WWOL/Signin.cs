@@ -17,9 +17,13 @@ namespace WWOL
             InitializeComponent();
         }
 
-        private void Signin_Load(object sender, EventArgs e)
+        private void sign_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            SignFinish signfinish= new SignFinish();
+            signfinish.Show();
+            Program.ac.MainForm = signfinish;
+            this.Close();
         }
     }
 }

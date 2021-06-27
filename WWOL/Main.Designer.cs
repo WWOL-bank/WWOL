@@ -51,6 +51,7 @@ namespace WWOL
             dissaving.Size = new System.Drawing.Size(250, 85);
             dissaving.TabIndex = 0;
             dissaving.UseVisualStyleBackColor = false;
+            dissaving.Click += new System.EventHandler(this.dissaving_Click);
             // 
             // transfer
             // 
@@ -65,6 +66,7 @@ namespace WWOL
             this.transfer.Size = new System.Drawing.Size(250, 85);
             this.transfer.TabIndex = 1;
             this.transfer.UseVisualStyleBackColor = false;
+            this.transfer.Click += new System.EventHandler(this.transfer_Click);
             // 
             // check
             // 
@@ -79,6 +81,7 @@ namespace WWOL
             this.check.Size = new System.Drawing.Size(250, 85);
             this.check.TabIndex = 2;
             this.check.UseVisualStyleBackColor = false;
+            this.check.Click += new System.EventHandler(this.check_Click);
             // 
             // deposit
             // 
@@ -93,6 +96,7 @@ namespace WWOL
             this.deposit.Size = new System.Drawing.Size(250, 85);
             this.deposit.TabIndex = 3;
             this.deposit.UseVisualStyleBackColor = false;
+            this.deposit.Click += new System.EventHandler(this.deposit_Click);
             // 
             // time
             // 

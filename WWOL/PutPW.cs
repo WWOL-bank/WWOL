@@ -16,5 +16,38 @@ namespace WWOL
         {
             InitializeComponent();
         }
+
+        private void bO_Click(object sender, EventArgs e)
+        {
+            if(Program.CN == Choice.dissaving.ToString())
+            {
+                this.Hide();
+                PutOutMoney putOutMoney = new PutOutMoney();
+                putOutMoney.Show();
+                Program.ac.MainForm = putOutMoney;
+                this.Close();
+            } else if (Program.CN == Choice.check.ToString())
+            {
+                this.Hide();
+                BankNumCheck bankNumCheck = new BankNumCheck();
+                bankNumCheck.Show();
+                Program.ac.MainForm = bankNumCheck;
+                this.Close();
+            } else if (Program.CN == Choice.deposit.ToString())
+            {
+                this.Hide();
+                PutInMoney putInMoney = new PutInMoney();
+                putInMoney.Show();
+                Program.ac.MainForm = putInMoney;
+                this.Close();
+            } else if(Program.CN == Choice.transfer.ToString())
+            {
+                this.Hide();
+                PutOutNum putOutNum = new PutOutNum();
+                putOutNum.Show();
+                Program.ac.MainForm = putOutNum;
+                this.Close();
+            }
+        }
     }
 }

@@ -24,6 +24,7 @@ namespace WWOL
 
         private void dissaving_Click(object sender, EventArgs e)
         {
+            Program.CN = "1";
             this.Hide();
             PutNum putNum = new PutNum();
             putNum.Show();
@@ -33,6 +34,7 @@ namespace WWOL
 
         private void check_Click(object sender, EventArgs e)
         {
+            Program.CN = "2";
             this.Hide();
             PutNum putNum = new PutNum();
             putNum.Show();
@@ -42,6 +44,7 @@ namespace WWOL
 
         private void deposit_Click(object sender, EventArgs e)
         {
+            Program.CN = "3";
             this.Hide();
             PutNum putNum = new PutNum();
             putNum.Show();
@@ -51,6 +54,7 @@ namespace WWOL
 
         private void transfer_Click(object sender, EventArgs e)
         {
+            Program.CN = "4";
             this.Hide();
             PutNum putNum = new PutNum();
             putNum.Show();

@@ -35,6 +35,7 @@ namespace WWOL
             this.check = new System.Windows.Forms.Button();
             this.deposit = new System.Windows.Forms.Button();
             this.time = new System.Windows.Forms.Label();
+            this.num = new System.Windows.Forms.Label();
             dissaving = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -109,12 +110,25 @@ namespace WWOL
             this.time.TabIndex = 4;
             this.time.Text = "현재 시각";
             // 
+            // num
+            // 
+            this.num.AutoSize = true;
+            this.num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
+            this.num.Font = new System.Drawing.Font("한컴 고딕", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.num.Location = new System.Drawing.Point(614, 95);
+            this.num.Name = "num";
+            this.num.Size = new System.Drawing.Size(297, 31);
+            this.num.TabIndex = 5;
+            this.num.Text = "계좌번호: 123-4567-8901";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.num);
             this.Controls.Add(this.time);
             this.Controls.Add(this.deposit);
             this.Controls.Add(this.check);
@@ -134,5 +148,6 @@ namespace WWOL
         private System.Windows.Forms.Button check;
         private System.Windows.Forms.Button deposit;
         private System.Windows.Forms.Label time;
+        private System.Windows.Forms.Label num;
     }
 }

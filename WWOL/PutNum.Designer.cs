@@ -68,6 +68,7 @@ namespace WWOL
             // 
             // b1
             // 
+            this.b1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.b1.BackColor = System.Drawing.Color.White;
             this.b1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b1.BackgroundImage")));
             this.b1.FlatAppearance.BorderSize = 0;
@@ -227,6 +228,7 @@ namespace WWOL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.b0);

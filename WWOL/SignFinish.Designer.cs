@@ -32,6 +32,7 @@ namespace WWOL
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignFinish));
             this.label1 = new System.Windows.Forms.Label();
             this.gomain = new System.Windows.Forms.Button();
+            this.num = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -59,12 +60,25 @@ namespace WWOL
             this.gomain.UseVisualStyleBackColor = false;
             this.gomain.Click += new System.EventHandler(this.gomain_Click);
             // 
+            // num
+            // 
+            this.num.AutoSize = true;
+            this.num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
+            this.num.Font = new System.Drawing.Font("한컴 고딕", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.num.Location = new System.Drawing.Point(380, 343);
+            this.num.Name = "num";
+            this.num.Size = new System.Drawing.Size(297, 31);
+            this.num.TabIndex = 2;
+            this.num.Text = "계좌번호: 123-4567-8901";
+            // 
             // SignFinish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.num);
             this.Controls.Add(this.gomain);
             this.Controls.Add(this.label1);
             this.Name = "SignFinish";
@@ -78,5 +92,6 @@ namespace WWOL
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button gomain;
+        private System.Windows.Forms.Label num;
     }
 }

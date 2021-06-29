@@ -16,5 +16,14 @@ namespace WWOL
         {
             InitializeComponent();
         }
+
+        private void bO_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OutCheck outCheck= new OutCheck();
+            outCheck.Show();
+            Program.ac.MainForm = outCheck;
+            this.Close();
+        }
     }
 }

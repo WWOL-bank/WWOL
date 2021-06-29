@@ -32,7 +32,7 @@ namespace WWOL
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OutCheck));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bO = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -59,17 +59,18 @@ namespace WWOL
             this.label2.Text = "MONEY";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // bO
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(590, 570);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(246, 80);
-            this.button1.TabIndex = 6;
-            this.button1.UseVisualStyleBackColor = false;
+            this.bO.BackColor = System.Drawing.Color.White;
+            this.bO.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bO.BackgroundImage")));
+            this.bO.FlatAppearance.BorderSize = 0;
+            this.bO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bO.Location = new System.Drawing.Point(590, 570);
+            this.bO.Name = "bO";
+            this.bO.Size = new System.Drawing.Size(246, 80);
+            this.bO.TabIndex = 6;
+            this.bO.UseVisualStyleBackColor = false;
+            this.bO.Click += new System.EventHandler(this.bO_Click);
             // 
             // button2
             // 
@@ -91,7 +92,7 @@ namespace WWOL
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bO);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "OutCheck";
@@ -105,7 +106,7 @@ namespace WWOL
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bO;
         private System.Windows.Forms.Button button2;
     }
 }

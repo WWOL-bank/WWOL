@@ -89,6 +89,7 @@ namespace WWOL
             this.bO.Size = new System.Drawing.Size(220, 80);
             this.bO.TabIndex = 34;
             this.bO.UseVisualStyleBackColor = false;
+            this.bO.Click += new System.EventHandler(this.bO_Click);
             // 
             // bC
             // 

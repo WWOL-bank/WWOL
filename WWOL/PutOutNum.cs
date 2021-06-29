@@ -16,5 +16,14 @@ namespace WWOL
         {
             InitializeComponent();
         }
+
+        private void bO_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PutInMoney putInMoney = new PutInMoney();
+            putInMoney.Show();
+            Program.ac.MainForm = putInMoney;
+            this.Close();
+        }
     }
 }

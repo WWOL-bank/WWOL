@@ -31,7 +31,7 @@ namespace WWOL
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SendFinish));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bO = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,17 +45,18 @@ namespace WWOL
             this.label1.TabIndex = 9;
             this.label1.Text = "계좌이체가 완료 되었습니다";
             // 
-            // button1
+            // bO
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(424, 570);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(246, 80);
-            this.button1.TabIndex = 13;
-            this.button1.UseVisualStyleBackColor = false;
+            this.bO.BackColor = System.Drawing.Color.White;
+            this.bO.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bO.BackgroundImage")));
+            this.bO.FlatAppearance.BorderSize = 0;
+            this.bO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bO.Location = new System.Drawing.Point(424, 570);
+            this.bO.Name = "bO";
+            this.bO.Size = new System.Drawing.Size(246, 80);
+            this.bO.TabIndex = 13;
+            this.bO.UseVisualStyleBackColor = false;
+            this.bO.Click += new System.EventHandler(this.bO_Click);
             // 
             // SendFinish
             // 
@@ -64,7 +65,7 @@ namespace WWOL
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bO);
             this.Controls.Add(this.label1);
             this.Name = "SendFinish";
             this.Text = "SendFinish";
@@ -76,6 +77,6 @@ namespace WWOL
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bO;
     }
 }

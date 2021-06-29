@@ -6,14 +6,6 @@ using System.Windows.Forms;
 
 namespace WWOL
 {
-    public enum Choice
-    {
-        none = 0,
-        dissaving = 1,
-        check = 2,
-        deposit = 3,
-        transfer = 4
-    }
 
     static class Program
     {
@@ -22,6 +14,11 @@ namespace WWOL
         /// </summary>
 
         public static string CN = "0";
+        public static void CNIn(out string CN, string ch)
+        {
+            CN = ch;
+        }
+
         public static ApplicationContext ac = new ApplicationContext();
         [STAThread]
         static void Main()

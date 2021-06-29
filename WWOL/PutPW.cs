@@ -19,28 +19,28 @@ namespace WWOL
 
         private void bO_Click(object sender, EventArgs e)
         {
-            if(Program.CN == Choice.dissaving.ToString())
+            if(Program.CN == "1")
             {
                 this.Hide();
                 PutOutMoney putOutMoney = new PutOutMoney();
                 putOutMoney.Show();
                 Program.ac.MainForm = putOutMoney;
                 this.Close();
-            } else if (Program.CN == Choice.check.ToString())
+            } else if (Program.CN == "2")
             {
                 this.Hide();
                 BankNumCheck bankNumCheck = new BankNumCheck();
                 bankNumCheck.Show();
                 Program.ac.MainForm = bankNumCheck;
                 this.Close();
-            } else if (Program.CN == Choice.deposit.ToString())
+            } else if (Program.CN == "3")
             {
                 this.Hide();
                 PutInMoney putInMoney = new PutInMoney();
                 putInMoney.Show();
                 Program.ac.MainForm = putInMoney;
                 this.Close();
-            } else if(Program.CN == Choice.transfer.ToString())
+            } else if(Program.CN == "4")
             {
                 this.Hide();
                 PutOutNum putOutNum = new PutOutNum();

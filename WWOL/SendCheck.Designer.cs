@@ -33,6 +33,7 @@ namespace WWOL
             this.label1 = new System.Windows.Forms.Label();
             this.bX = new System.Windows.Forms.Button();
             this.bO = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -72,6 +73,18 @@ namespace WWOL
             this.bO.UseVisualStyleBackColor = false;
             this.bO.Click += new System.EventHandler(this.bO_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("한컴 고딕", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label2.Location = new System.Drawing.Point(273, 332);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(268, 85);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "MONEY";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SendCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -79,6 +92,7 @@ namespace WWOL
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.bO);
             this.Controls.Add(this.bX);
             this.Controls.Add(this.label1);
@@ -95,5 +109,6 @@ namespace WWOL
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bX;
         private System.Windows.Forms.Button bO;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -29,9 +29,9 @@ namespace WWOL
         private void bX_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PutOutMoney putOutMoney = new PutOutMoney();
-            putOutMoney.Show();
-            Program.ac.MainForm = putOutMoney;
+            Main main = new Main();
+            main.Show();
+            Program.ac.MainForm = main;
             this.Close();
         }
     }

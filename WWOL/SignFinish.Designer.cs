@@ -84,6 +84,7 @@ namespace WWOL
             this.Name = "SignFinish";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignFinish";
+            this.Load += new System.EventHandler(this.SignFinish_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

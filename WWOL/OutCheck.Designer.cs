@@ -31,7 +31,7 @@ namespace WWOL
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OutCheck));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.money = new System.Windows.Forms.Label();
             this.bO = new System.Windows.Forms.Button();
             this.bX = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -47,17 +47,17 @@ namespace WWOL
             this.label1.TabIndex = 4;
             this.label1.Text = "출금하실 금액을 확인하시고\r\n맞으면 확인 틀리면 취소를 누르세요\r\n";
             // 
-            // label2
+            // money
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("한컴 고딕", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.label2.Location = new System.Drawing.Point(280, 333);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(268, 85);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "MONEY";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.money.AutoSize = true;
+            this.money.BackColor = System.Drawing.Color.White;
+            this.money.Font = new System.Drawing.Font("한컴 고딕", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.money.Location = new System.Drawing.Point(280, 333);
+            this.money.Name = "money";
+            this.money.Size = new System.Drawing.Size(268, 85);
+            this.money.TabIndex = 5;
+            this.money.Text = "MONEY";
+            this.money.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bO
             // 
@@ -94,11 +94,12 @@ namespace WWOL
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.bX);
             this.Controls.Add(this.bO);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.money);
             this.Controls.Add(this.label1);
             this.Name = "OutCheck";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OutCheck";
+            this.Load += new System.EventHandler(this.OutCheck_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,7 +108,7 @@ namespace WWOL
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label money;
         private System.Windows.Forms.Button bO;
         private System.Windows.Forms.Button bX;
     }

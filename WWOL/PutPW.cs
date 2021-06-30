@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace WWOL
 {
@@ -26,26 +28,12 @@ namespace WWOL
                 putOutMoney.Show();
                 Program.ac.MainForm = putOutMoney;
                 this.Close();
-            } else if (Program.CN == "2")
-            {
-                this.Hide();
-                BankNumCheck bankNumCheck = new BankNumCheck();
-                bankNumCheck.Show();
-                Program.ac.MainForm = bankNumCheck;
-                this.Close();
             } else if (Program.CN == "3")
             {
                 this.Hide();
                 PutInMoney putInMoney = new PutInMoney();
                 putInMoney.Show();
                 Program.ac.MainForm = putInMoney;
-                this.Close();
-            } else if(Program.CN == "4")
-            {
-                this.Hide();
-                PutOutNum putOutNum = new PutOutNum();
-                putOutNum.Show();
-                Program.ac.MainForm = putOutNum;
                 this.Close();
             }
         }
@@ -113,7 +101,29 @@ namespace WWOL
         {
             textField.Text = "";
             textField.Focus();
-            textField.Select(textField.Text.Length, 0);
+            textField.Select(textField.Text.Length, 0); // reset버튼 클릭 시 textBox 안에 text가 사라지고, 포커스를 준다.
+        }
+
+        private void PutPW_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+
+        private void textField_TextChanged(object sender, EventArgs e)
+        {
+
+            MySqlConnection connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;userid=root;Pwd=6311yjnoh*");
+
+            connection.Open();
+
+
+            MySqlCommand comm = connection.CreateCommand();
+
+            int password = int.Parse(textField.Text);
+
+            comm.CommandText = "SELECT userpw FROM user where userpw = '" + password + "');";
+
+            connection.Close();
         }
     }
 }

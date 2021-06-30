@@ -91,5 +91,10 @@ namespace WWOL
             textField.Focus();
             textField.Select(textField.Text.Length, 0);
         }
+
+        private void PutNum_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
     }
 }

@@ -66,6 +66,7 @@ namespace WWOL
             this.textField.Size = new System.Drawing.Size(556, 92);
             this.textField.TabIndex = 10;
             this.textField.UseSystemPasswordChar = true;
+            this.textField.TextChanged += new System.EventHandler(this.textField_TextChanged);
             // 
             // b0
             // 
@@ -261,6 +262,7 @@ namespace WWOL
             this.Name = "PutPW";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PutPW";
+            this.Load += new System.EventHandler(this.PutPW_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

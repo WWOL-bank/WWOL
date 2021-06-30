@@ -25,14 +25,9 @@ namespace WWOL
             Program.ac.MainForm = signin;
             this.Close();
         }
-
-        private void loginBtn_Click(object sender, EventArgs e)
+        private void StartPage_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            Login login = new Login();
-            login.Show();
-            Program.ac.MainForm = login;
-            this.Close();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
     }
 }

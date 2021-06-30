@@ -19,26 +19,20 @@ namespace WWOL
 
         private void Main_Load(object sender, EventArgs e)
         {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
 
+            num.Text = "계좌번호 : " + Program.rnd; // 계좌 번호: 랜덤값 표시
+
+            time.Text = DateTime.Now.ToString("HH : mm"); // 현재 시간 표시
         }
 
         private void dissaving_Click(object sender, EventArgs e)
         {
             Program.CNIn(out Program.CN, "1");
             this.Hide();
-            PutNum putNum = new PutNum();
-            putNum.Show();
-            Program.ac.MainForm = putNum;
-            this.Close();
-        }
-
-        private void check_Click(object sender, EventArgs e)
-        {
-            Program.CNIn(out Program.CN, "2");
-            this.Hide();
-            PutNum putNum = new PutNum();
-            putNum.Show();
-            Program.ac.MainForm = putNum;
+            PutPW putPW = new PutPW();
+            putPW.Show();
+            Program.ac.MainForm = putPW;
             this.Close();
         }
 
@@ -46,19 +40,9 @@ namespace WWOL
         {
             Program.CNIn(out Program.CN, "3");
             this.Hide();
-            PutNum putNum = new PutNum();
-            putNum.Show();
-            Program.ac.MainForm = putNum;
-            this.Close();
-        }
-
-        private void transfer_Click(object sender, EventArgs e)
-        {
-            Program.CNIn(out Program.CN, "4");
-            this.Hide();
-            PutNum putNum = new PutNum();
-            putNum.Show();
-            Program.ac.MainForm = putNum;
+            PutPW putPW = new PutPW();
+            putPW.Show();
+            Program.ac.MainForm = putPW;
             this.Close();
         }
     }

@@ -21,7 +21,19 @@ namespace WWOL
             CN = ch;
         }
 
-        public static ApplicationContext ac = new ApplicationContext();
+        public static string rnd;
+        public static void RR(out string rnd, int a, int b, int c)
+        {
+            rnd = a + "-" + b + "-" + c;
+        }
+
+        public static string mm;
+        public static void MS(out string mm, string inM)
+        {
+            mm = inM;
+        }
+
+    public static ApplicationContext ac = new ApplicationContext();
         [STAThread]
         static void Main()
         {
@@ -31,6 +43,8 @@ namespace WWOL
 
             StartPage startPage = new StartPage();
             ac.MainForm = startPage;
+
+
 
             Application.Run(ac);
         }

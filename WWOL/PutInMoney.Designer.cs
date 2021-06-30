@@ -65,6 +65,7 @@ namespace WWOL
             this.textField.Name = "textField";
             this.textField.Size = new System.Drawing.Size(556, 92);
             this.textField.TabIndex = 11;
+            this.textField.TextChanged += new System.EventHandler(this.textField_TextChanged);
             // 
             // b0
             // 
@@ -260,6 +261,7 @@ namespace WWOL
             this.Name = "PutInMoney";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PutInMoney";
+            this.Load += new System.EventHandler(this.PutInMoney_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

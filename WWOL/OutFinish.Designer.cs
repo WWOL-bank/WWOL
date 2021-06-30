@@ -71,6 +71,7 @@ namespace WWOL
             this.Name = "OutFinish";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OutFinish";
+            this.Load += new System.EventHandler(this.OutFinish_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

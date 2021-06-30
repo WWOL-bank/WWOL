@@ -70,6 +70,7 @@ namespace WWOL
             this.Name = "InFinish";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InFinish";
+            this.Load += new System.EventHandler(this.InFinish_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -34,5 +34,12 @@ namespace WWOL
             Program.ac.MainForm = main;
             this.Close();
         }
+
+        private void InCheck_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
+            money.Text = Program.mm;
+        }
     }
 }

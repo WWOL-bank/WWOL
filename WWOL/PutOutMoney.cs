@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace WWOL
 {
@@ -19,6 +20,20 @@ namespace WWOL
 
         private void bO_Click(object sender, EventArgs e)
         {
+
+            MySqlConnection connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;userid=root;Pwd=6311yjnoh*");
+
+            connection.Open();
+
+
+            MySqlCommand comm = connection.CreateCommand();
+
+            int cash = int.Parse(textField.Text);
+
+            comm.CommandText = "UPDATE user SET cash = cash - " + cash + "WHERE usernb = '" + Program.rnd + "');";
+
+            connection.Close();
+
             this.Hide();
             OutCheck outCheck= new OutCheck();
             outCheck.Show();
@@ -90,6 +105,16 @@ namespace WWOL
             textField.Text = "";
             textField.Focus();
             textField.Select(textField.Text.Length, 0);
+        }
+
+        private void PutOutMoney_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+
+        private void textField_TextChanged(object sender, EventArgs e)
+        {
+            Program.MS(out Program.mm, textField.Text);
         }
     }
 }

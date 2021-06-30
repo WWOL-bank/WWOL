@@ -25,5 +25,10 @@ namespace WWOL
             Program.ac.MainForm = main;
             this.Close();
         }
+
+        private void OutFinish_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
     }
 }

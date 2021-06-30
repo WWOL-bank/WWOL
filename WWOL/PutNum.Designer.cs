@@ -261,6 +261,7 @@ namespace WWOL
             this.Name = "PutNum";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PutNum";
+            this.Load += new System.EventHandler(this.PutNum_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

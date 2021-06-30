@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace WWOL
 {
@@ -24,6 +26,13 @@ namespace WWOL
             main.Show();
             Program.ac.MainForm = main;
             this.Close();
+        }
+
+        private void SignFinish_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
+            num.Text = "계좌번호 : " + Program.rnd;
         }
     }
 }

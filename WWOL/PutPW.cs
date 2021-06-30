@@ -111,11 +111,7 @@ namespace WWOL
 
         private void bb_Click(object sender, EventArgs e)
         {
-            string str = textField.Text;
-            str.Substring(0, str.Length - 1);
-
-            textField.Text = str;
-
+            textField.Text = "";
             textField.Focus();
             textField.Select(textField.Text.Length, 0);
         }

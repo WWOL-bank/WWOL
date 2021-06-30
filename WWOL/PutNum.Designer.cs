@@ -31,7 +31,7 @@ namespace WWOL
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PutNum));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textField = new System.Windows.Forms.TextBox();
             this.b1 = new System.Windows.Forms.Button();
             this.b2 = new System.Windows.Forms.Button();
             this.b3 = new System.Windows.Forms.Button();
@@ -58,13 +58,13 @@ namespace WWOL
             this.label1.TabIndex = 0;
             this.label1.Text = "계좌번호를 입력하세요";
             // 
-            // textBox3
+            // textField
             // 
-            this.textBox3.Font = new System.Drawing.Font("한컴 고딕", 65F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBox3.Location = new System.Drawing.Point(254, 331);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(556, 92);
-            this.textBox3.TabIndex = 9;
+            this.textField.Font = new System.Drawing.Font("한컴 고딕", 65F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.textField.Location = new System.Drawing.Point(254, 331);
+            this.textField.Name = "textField";
+            this.textField.Size = new System.Drawing.Size(556, 92);
+            this.textField.TabIndex = 9;
             // 
             // b1
             // 
@@ -78,6 +78,7 @@ namespace WWOL
             this.b1.Size = new System.Drawing.Size(80, 80);
             this.b1.TabIndex = 10;
             this.b1.UseVisualStyleBackColor = false;
+            this.b1.Click += new System.EventHandler(this.b1_Click);
             // 
             // b2
             // 
@@ -90,6 +91,7 @@ namespace WWOL
             this.b2.Size = new System.Drawing.Size(80, 80);
             this.b2.TabIndex = 11;
             this.b2.UseVisualStyleBackColor = false;
+            this.b2.Click += new System.EventHandler(this.b2_Click);
             // 
             // b3
             // 
@@ -102,6 +104,7 @@ namespace WWOL
             this.b3.Size = new System.Drawing.Size(80, 80);
             this.b3.TabIndex = 12;
             this.b3.UseVisualStyleBackColor = false;
+            this.b3.Click += new System.EventHandler(this.b3_Click);
             // 
             // b4
             // 
@@ -114,6 +117,7 @@ namespace WWOL
             this.b4.Size = new System.Drawing.Size(80, 80);
             this.b4.TabIndex = 13;
             this.b4.UseVisualStyleBackColor = false;
+            this.b4.Click += new System.EventHandler(this.b4_Click);
             // 
             // b5
             // 
@@ -126,6 +130,7 @@ namespace WWOL
             this.b5.Size = new System.Drawing.Size(80, 80);
             this.b5.TabIndex = 14;
             this.b5.UseVisualStyleBackColor = false;
+            this.b5.Click += new System.EventHandler(this.b5_Click);
             // 
             // b6
             // 
@@ -138,6 +143,7 @@ namespace WWOL
             this.b6.Size = new System.Drawing.Size(80, 80);
             this.b6.TabIndex = 15;
             this.b6.UseVisualStyleBackColor = false;
+            this.b6.Click += new System.EventHandler(this.b6_Click);
             // 
             // b7
             // 
@@ -150,6 +156,7 @@ namespace WWOL
             this.b7.Size = new System.Drawing.Size(80, 80);
             this.b7.TabIndex = 16;
             this.b7.UseVisualStyleBackColor = false;
+            this.b7.Click += new System.EventHandler(this.b7_Click);
             // 
             // b8
             // 
@@ -162,6 +169,7 @@ namespace WWOL
             this.b8.Size = new System.Drawing.Size(80, 80);
             this.b8.TabIndex = 17;
             this.b8.UseVisualStyleBackColor = false;
+            this.b8.Click += new System.EventHandler(this.b8_Click);
             // 
             // b9
             // 
@@ -174,6 +182,7 @@ namespace WWOL
             this.b9.Size = new System.Drawing.Size(80, 80);
             this.b9.TabIndex = 18;
             this.b9.UseVisualStyleBackColor = false;
+            this.b9.Click += new System.EventHandler(this.b9_Click);
             // 
             // bb
             // 
@@ -186,6 +195,7 @@ namespace WWOL
             this.bb.Size = new System.Drawing.Size(80, 80);
             this.bb.TabIndex = 19;
             this.bb.UseVisualStyleBackColor = false;
+            this.bb.Click += new System.EventHandler(this.bb_Click);
             // 
             // bX
             // 
@@ -224,6 +234,7 @@ namespace WWOL
             this.b0.Size = new System.Drawing.Size(80, 80);
             this.b0.TabIndex = 22;
             this.b0.UseVisualStyleBackColor = false;
+            this.b0.Click += new System.EventHandler(this.b0_Click);
             // 
             // PutNum
             // 
@@ -245,7 +256,7 @@ namespace WWOL
             this.Controls.Add(this.b3);
             this.Controls.Add(this.b2);
             this.Controls.Add(this.b1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textField);
             this.Controls.Add(this.label1);
             this.Name = "PutNum";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -258,7 +269,7 @@ namespace WWOL
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textField;
         private System.Windows.Forms.Button b1;
         private System.Windows.Forms.Button b2;
         private System.Windows.Forms.Button b3;

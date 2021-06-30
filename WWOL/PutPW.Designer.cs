@@ -247,6 +247,7 @@ namespace WWOL
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
             this.Name = "PutPW";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PutPW";
             this.ResumeLayout(false);
             this.PerformLayout();

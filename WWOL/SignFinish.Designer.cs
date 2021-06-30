@@ -82,6 +82,7 @@ namespace WWOL
             this.Controls.Add(this.gomain);
             this.Controls.Add(this.label1);
             this.Name = "SignFinish";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignFinish";
             this.ResumeLayout(false);
             this.PerformLayout();

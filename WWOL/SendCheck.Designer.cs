@@ -82,6 +82,7 @@ namespace WWOL
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Name = "SendCheck";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SendCheck";
             this.ResumeLayout(false);
             this.PerformLayout();

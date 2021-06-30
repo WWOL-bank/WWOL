@@ -58,9 +58,9 @@ namespace WWOL
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(293, 203);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 58);
+            this.label2.Size = new System.Drawing.Size(151, 58);
             this.label2.TabIndex = 1;
-            this.label2.Text = "이름";
+            this.label2.Text = "아이디";
             // 
             // label3
             // 
@@ -119,6 +119,7 @@ namespace WWOL
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Signin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Signin";
             this.ResumeLayout(false);
             this.PerformLayout();

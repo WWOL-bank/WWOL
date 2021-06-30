@@ -74,6 +74,7 @@ namespace WWOL
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.signinBtn);
             this.Name = "StartPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartPage";
             this.ResumeLayout(false);
 

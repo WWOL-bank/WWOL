@@ -96,6 +96,7 @@ namespace WWOL
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "OutCheck";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OutCheck";
             this.ResumeLayout(false);
             this.PerformLayout();

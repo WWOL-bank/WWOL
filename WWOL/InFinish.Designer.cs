@@ -68,6 +68,7 @@ namespace WWOL
             this.Controls.Add(this.bO);
             this.Controls.Add(this.label1);
             this.Name = "InFinish";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InFinish";
             this.ResumeLayout(false);
             this.PerformLayout();

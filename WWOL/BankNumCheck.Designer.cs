@@ -55,6 +55,7 @@ namespace WWOL
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.bO);
             this.Name = "BankNumCheck";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BankNumCheck";
             this.ResumeLayout(false);
 

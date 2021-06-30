@@ -42,7 +42,7 @@ namespace WWOL
             this.b8 = new System.Windows.Forms.Button();
             this.b9 = new System.Windows.Forms.Button();
             this.bb = new System.Windows.Forms.Button();
-            this.bC = new System.Windows.Forms.Button();
+            this.bX = new System.Windows.Forms.Button();
             this.bO = new System.Windows.Forms.Button();
             this.b0 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -187,17 +187,18 @@ namespace WWOL
             this.bb.TabIndex = 19;
             this.bb.UseVisualStyleBackColor = false;
             // 
-            // bC
+            // bX
             // 
-            this.bC.BackColor = System.Drawing.Color.White;
-            this.bC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bC.BackgroundImage")));
-            this.bC.FlatAppearance.BorderSize = 0;
-            this.bC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bC.Location = new System.Drawing.Point(784, 514);
-            this.bC.Name = "bC";
-            this.bC.Size = new System.Drawing.Size(220, 80);
-            this.bC.TabIndex = 20;
-            this.bC.UseVisualStyleBackColor = false;
+            this.bX.BackColor = System.Drawing.Color.White;
+            this.bX.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bX.BackgroundImage")));
+            this.bX.FlatAppearance.BorderSize = 0;
+            this.bX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bX.Location = new System.Drawing.Point(784, 514);
+            this.bX.Name = "bX";
+            this.bX.Size = new System.Drawing.Size(220, 80);
+            this.bX.TabIndex = 20;
+            this.bX.UseVisualStyleBackColor = false;
+            this.bX.Click += new System.EventHandler(this.bX_Click);
             // 
             // bO
             // 
@@ -233,7 +234,7 @@ namespace WWOL
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.b0);
             this.Controls.Add(this.bO);
-            this.Controls.Add(this.bC);
+            this.Controls.Add(this.bX);
             this.Controls.Add(this.bb);
             this.Controls.Add(this.b9);
             this.Controls.Add(this.b8);
@@ -268,7 +269,7 @@ namespace WWOL
         private System.Windows.Forms.Button b8;
         private System.Windows.Forms.Button b9;
         private System.Windows.Forms.Button bb;
-        private System.Windows.Forms.Button bC;
+        private System.Windows.Forms.Button bX;
         private System.Windows.Forms.Button bO;
         private System.Windows.Forms.Button b0;
     }

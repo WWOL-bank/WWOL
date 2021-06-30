@@ -49,5 +49,14 @@ namespace WWOL
                 this.Close();
             }
         }
+
+        private void bX_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main main = new Main();
+            main.Show();
+            Program.ac.MainForm = main;
+            this.Close();
+        }
     }
 }

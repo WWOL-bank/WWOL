@@ -31,7 +31,7 @@ namespace WWOL
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SendCheck));
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bX = new System.Windows.Forms.Button();
             this.bO = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -46,17 +46,18 @@ namespace WWOL
             this.label1.TabIndex = 6;
             this.label1.Text = "이체하실 금액을 확인하시고\r\n맞으면 확인 틀리면 취소를 누르세요\r\n";
             // 
-            // button2
+            // bX
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(263, 570);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(246, 80);
-            this.button2.TabIndex = 9;
-            this.button2.UseVisualStyleBackColor = false;
+            this.bX.BackColor = System.Drawing.Color.White;
+            this.bX.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bX.BackgroundImage")));
+            this.bX.FlatAppearance.BorderSize = 0;
+            this.bX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bX.Location = new System.Drawing.Point(263, 570);
+            this.bX.Name = "bX";
+            this.bX.Size = new System.Drawing.Size(246, 80);
+            this.bX.TabIndex = 9;
+            this.bX.UseVisualStyleBackColor = false;
+            this.bX.Click += new System.EventHandler(this.bX_Click);
             // 
             // bO
             // 
@@ -79,7 +80,7 @@ namespace WWOL
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.bO);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.bX);
             this.Controls.Add(this.label1);
             this.Name = "SendCheck";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -92,7 +93,7 @@ namespace WWOL
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bX;
         private System.Windows.Forms.Button bO;
     }
 }

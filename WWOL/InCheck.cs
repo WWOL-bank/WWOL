@@ -25,5 +25,14 @@ namespace WWOL
             Program.ac.MainForm = inFinish;
             this.Close();
         }
+
+        private void bX_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PutOutMoney putOutMoney = new PutOutMoney();
+            putOutMoney.Show();
+            Program.ac.MainForm = putOutMoney;
+            this.Close();
+        }
     }
 }

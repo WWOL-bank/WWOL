@@ -21,15 +21,39 @@ namespace WWOL
 
         private void bO_Click(object sender, EventArgs e)
         {
-            if (Program.CN == "3")
+
+            MySqlConnection connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;userid=root;Pwd=6311yjnoh*");
+
+            connection.Open();
+
+
+            MySqlCommand comm = connection.CreateCommand();
+
+            int cash = int.Parse(textField.Text);
+
+            comm.CommandText = "UPDATE user SET cash = cash + " + cash + " WHERE usernb = '" + Program.rnd + "'";
+            comm.ExecuteNonQuery();
+
+            connection.Close();
+
+            this.Hide();
+            InCheck inCheck = new InCheck();
+            inCheck.Show();
+            Program.ac.MainForm = inCheck;
+            this.Close();
+
+
+
+           /* if (Program.CN == "3")
             {
                 this.Hide();
-                InCheck inCheck= new InCheck();
-                inCheck.Show();
-                Program.ac.MainForm = inCheck;
+                OutCheck outCheck= new OutCheck();
+                outCheck.Show();
+                Program.ac.MainForm = outCheck;
                 this.Close();
             }
-            else if (Program.CN == "4")
+            else*/
+            if (Program.CN == "4")
             {
                 this.Hide();
                 SendCheck sendCheck = new SendCheck();

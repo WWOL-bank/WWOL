@@ -30,7 +30,8 @@ namespace WWOL
 
             int cash = int.Parse(textField.Text);
 
-            comm.CommandText = "UPDATE user SET cash = cash - " + cash + "WHERE usernb = '" + Program.rnd + "');";
+            comm.CommandText = "UPDATE user SET cash = cash - " + cash + " WHERE usernb = '" + Program.rnd + "'";
+            comm.ExecuteNonQuery();
 
             connection.Close();
 

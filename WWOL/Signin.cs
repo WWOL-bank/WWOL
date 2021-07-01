@@ -35,9 +35,9 @@ namespace WWOL
 
 
             Random rand = new Random();
-            int a = rand.Next(1, 1000);
-            int b = rand.Next(1, 1000);
-            int c = rand.Next(1, 10000);
+            int a = rand.Next(100, 1000);
+            int b = rand.Next(100, 1000);
+            int c = rand.Next(1000, 10000);
 
             Program.RR(out Program.rnd, a, b, c);
 

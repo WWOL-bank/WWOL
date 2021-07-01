@@ -21,7 +21,38 @@ namespace WWOL
 
         private void bO_Click(object sender, EventArgs e)
         {
-            if(Program.CN == "1")
+
+
+            MySqlConnection connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;userid=root;Pwd=6311yjnoh*");
+
+            connection.Open();
+
+
+            MySqlCommand comm = connection.CreateCommand();
+
+            int password = int.Parse(textField.Text);
+
+            string query = "SELECT userpw FROM user where userpw = '" + password + "' and usernb = '" + Program.rnd + "';";
+            comm.CommandText = "SELECT count(*) FROM user where userpw = '" + password + "' and usernb = '" + Program.rnd + "';";
+            int row = Convert.ToInt32(comm.ExecuteScalar());
+            Console.WriteLine(query);
+            Console.WriteLine(row);
+            if (row == 0)
+            {
+                MessageBox.Show("비밀번호가 틀렸습니다!");
+                this.Hide();
+                Main main = new Main();
+                main.Show();
+                Program.ac.MainForm = main;
+                this.Close();
+
+                return;
+            }
+
+            connection.Close();
+
+
+            if (Program.CN == "1")
             {
                 this.Hide();
                 PutOutMoney putOutMoney = new PutOutMoney();
@@ -112,18 +143,7 @@ namespace WWOL
         private void textField_TextChanged(object sender, EventArgs e)
         {
 
-            MySqlConnection connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;userid=root;Pwd=6311yjnoh*");
 
-            connection.Open();
-
-
-            MySqlCommand comm = connection.CreateCommand();
-
-            int password = int.Parse(textField.Text);
-
-            comm.CommandText = "SELECT userpw FROM user where userpw = '" + password + "');";
-
-            connection.Close();
         }
     }
 }

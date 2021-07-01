@@ -58,7 +58,7 @@ namespace WWOL
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
             this.label2.Font = new System.Drawing.Font("한컴 고딕", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(293, 203);
+            this.label2.Location = new System.Drawing.Point(290, 201);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 58);
             this.label2.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace WWOL
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
             this.label3.Font = new System.Drawing.Font("한컴 고딕", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(281, 324);
+            this.label3.Location = new System.Drawing.Point(278, 322);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(193, 58);
             this.label3.TabIndex = 2;
@@ -79,7 +79,7 @@ namespace WWOL
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("한컴 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBox1.Location = new System.Drawing.Point(476, 206);
+            this.textBox1.Location = new System.Drawing.Point(473, 204);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(366, 59);
             this.textBox1.TabIndex = 3;
@@ -87,7 +87,7 @@ namespace WWOL
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("한컴 고딕", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBox2.Location = new System.Drawing.Point(476, 327);
+            this.textBox2.Location = new System.Drawing.Point(473, 325);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(366, 59);
             this.textBox2.TabIndex = 4;
@@ -100,7 +100,7 @@ namespace WWOL
             this.sign.FlatAppearance.BorderSize = 0;
             this.sign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sign.Font = new System.Drawing.Font("한컴 고딕", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.sign.Location = new System.Drawing.Point(789, 450);
+            this.sign.Location = new System.Drawing.Point(786, 448);
             this.sign.Name = "sign";
             this.sign.Size = new System.Drawing.Size(160, 85);
             this.sign.TabIndex = 5;

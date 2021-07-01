@@ -37,3 +37,4 @@ C:\Users\s2001\WWOL\WWOL\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\s2001\WWOL\WWOL\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\s2001\WWOL\WWOL\bin\Debug\MySql.Data.xml
 C:\Users\s2001\WWOL\WWOL\obj\Debug\WWOL.csproj.CopyComplete
+C:\Users\s2001\WWOL\WWOL\obj\Debug\WWOL.Login.resources

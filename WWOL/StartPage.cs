@@ -29,5 +29,14 @@ namespace WWOL
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+            Program.ac.MainForm = login;
+            this.Close();
+        }
     }
 }

@@ -34,7 +34,9 @@ namespace WWOL
             this.deposit = new System.Windows.Forms.Button();
             this.time = new System.Windows.Forms.Label();
             this.num = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             dissaving = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dissaving
@@ -89,6 +91,15 @@ namespace WWOL
             this.num.TabIndex = 5;
             this.num.Text = "계좌번호: 123-4567-8901";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(620, 139);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 6;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -96,6 +107,7 @@ namespace WWOL
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.num);
             this.Controls.Add(this.time);
             this.Controls.Add(this.deposit);
@@ -104,6 +116,7 @@ namespace WWOL
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +126,6 @@ namespace WWOL
         private System.Windows.Forms.Button deposit;
         private System.Windows.Forms.Label time;
         private System.Windows.Forms.Label num;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

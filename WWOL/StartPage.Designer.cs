@@ -31,6 +31,7 @@ namespace WWOL
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartPage));
             this.signinBtn = new System.Windows.Forms.Button();
+            this.login = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // signinBtn
@@ -40,13 +41,28 @@ namespace WWOL
             this.signinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signinBtn.Font = new System.Drawing.Font("한컴 고딕", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.signinBtn.ForeColor = System.Drawing.Color.White;
-            this.signinBtn.Location = new System.Drawing.Point(476, 215);
+            this.signinBtn.Location = new System.Drawing.Point(586, 321);
             this.signinBtn.Name = "signinBtn";
             this.signinBtn.Size = new System.Drawing.Size(295, 120);
             this.signinBtn.TabIndex = 1;
             this.signinBtn.Text = "회원가입";
             this.signinBtn.UseVisualStyleBackColor = false;
             this.signinBtn.Click += new System.EventHandler(this.signinBtn_Click);
+            // 
+            // login
+            // 
+            this.login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(130)))), ((int)(((byte)(212)))));
+            this.login.FlatAppearance.BorderSize = 0;
+            this.login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login.Font = new System.Drawing.Font("한컴 고딕", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.login.ForeColor = System.Drawing.Color.White;
+            this.login.Location = new System.Drawing.Point(219, 117);
+            this.login.Name = "login";
+            this.login.Size = new System.Drawing.Size(295, 120);
+            this.login.TabIndex = 2;
+            this.login.Text = "로그인";
+            this.login.UseVisualStyleBackColor = false;
+            this.login.Click += new System.EventHandler(this.login_Click);
             // 
             // StartPage
             // 
@@ -55,6 +71,7 @@ namespace WWOL
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.login);
             this.Controls.Add(this.signinBtn);
             this.Name = "StartPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -67,5 +84,6 @@ namespace WWOL
         #endregion
 
         private System.Windows.Forms.Button signinBtn;
+        private System.Windows.Forms.Button login;
     }
 }
